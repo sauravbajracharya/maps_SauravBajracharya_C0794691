@@ -179,15 +179,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             @Override
             public void onMarkerDragEnd(@NonNull Marker marker) {
-                LatLng latLng = marker.getPosition();
+
                 if (markerList.size() > 3) {
                     switch (marker.getTitle()) {
 
                         case "A":
-
                             markerOneLatitudeLongitude = new LatLng(marker.getPosition().latitude, marker.getPosition().longitude);
-
-
                             break;
                         case "B":
 
