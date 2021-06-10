@@ -162,7 +162,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onMapLongClick(@NonNull LatLng latLng) {
                 setMarker(latLng);
-
+                if (centerOneMarker != null && centerTwoMarker != null && centerThreeMarker != null && centerFourMarker != null) {
+                    centerOneMarker.remove();
+                    centerTwoMarker.remove();
+                    centerThreeMarker.remove();
+                    centerFourMarker.remove();
+                }
             }
         });
 
