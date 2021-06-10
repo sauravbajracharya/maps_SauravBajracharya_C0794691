@@ -154,9 +154,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public boolean onMarkerClick(@NonNull Marker marker) {
 
                 Toast.makeText(MapsActivity.this, "Address: " + Utilities.getAddress(marker, getApplicationContext()), Toast.LENGTH_LONG).show();
-//                Toast.makeText(MapsActivity.this, "Address: ", Toast.LENGTH_LONG).show();
-//                Log.d("myTag", Utilities.getAddress(marker, MapsActivity.this));
-//
+
                 return false;
             }
         });
