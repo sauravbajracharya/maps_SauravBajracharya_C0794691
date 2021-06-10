@@ -352,9 +352,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void drawShape() {
 
         if (markerList.size() > 3) {
+
             PolygonOptions options = new PolygonOptions()
-                    .fillColor(0x33000000)
                     .strokeColor(Color.RED)
+                    .fillColor(0x5900FF00)
                     .strokeWidth(5);
 
             for (int i = 0; i < POLYGON_SIDES; i++) {
